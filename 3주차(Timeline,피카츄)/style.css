@@ -1,0 +1,93 @@
+.card{
+    display: grid;
+    grid-template-columns: 60px auto 30px;
+    background-color: floralwhite;
+    width: 40%;
+    position: relative;
+    word-break: keep-all;
+    line-height: 1.5;
+    border-radius: 10%;
+    box-shadow: 0px 0px 2px 2px black;
+    border: 4px solid var(--GREEN);
+    transition: .5s;
+    font-size: small;
+}
+.card:nth-child(even){
+    margin-left: 50%;
+}
+.content{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+img{
+    position: absolute;
+    left: 6px;
+    top: -27px;
+    grid-column: 1;
+    width: 50px;
+}
+.date{
+    grid-column: 2;
+}
+.project{
+    grid-column: 2;
+    font-size: large;
+    font-weight: bold;
+}
+.language{
+    grid-column: 2;
+}
+.For{
+    grid-column: 2;
+}
+.work{
+    grid-column: 2;
+}
+#dot{
+    grid-column: 3;
+    width: 30px;
+    height: 30px;
+    top: 26px;
+    position: absolute;
+    right: -26px;
+    font-size: x-large;
+}
+.card:nth-child(even) #dot {
+    grid-column: 1;
+    left: -20px;
+}
+#title {
+    text-align: center;
+    font-family: 'Dokdo', cursive;
+    font-size: x-large;
+}
+
+#line {
+    position: absolute;
+    top: 20%;
+    width: 5px;
+    height: 70%;
+    border-radius: 15px;
+    margin-left: 40%;
+    z-index: -1;
+    background-color: black;
+}
+@media(max-width:1000px){
+    #line{
+        display: None;
+    }
+    .card:nth-child(even) #dot{
+        grid-column: initial;
+        left : initial;
+    }
+    .card:nth-child(even){
+        margin-left: initial;
+    }
+    .card{
+        margin-top : 50px;
+    }
+}
+.card:hover{
+    background-color: plum;
+
+}

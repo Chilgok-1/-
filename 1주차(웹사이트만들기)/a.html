@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Yun's WEB</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body{
+      background-image: url(http://www.etorrent.co.kr/data/mw.cheditor/150404/f737ffd1e82a70f19b8e0c0863e4b17d_fzZF9TOvQI8OfzjQ3fBPBJ6jv.jpg);
+    }
+    </style>
+  </head>
+  <body>
+    <h1><a href = "index.html"> 자기소개 </a>
+      <input type = "button" value="낮" style="font-size : 20px;" onclick="
+        if (this.value == '낮'){
+          document.querySelector('body').style.background='black'
+          document.querySelector('body').style.color='white'
+          this.value = '밤'
+        }
+        else{
+          document.querySelector('body').style.background='white'
+          document.querySelector('body').style.color='black'
+          this.value = '낮'
+        }
+        
+        "></h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Hi</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="a.html"><strong>고양이</strong><span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="b.html">넷플릭스</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="grid">
+    <div class = "view">
+          <h2>예비 집사</h2>
+          아쉽게도 아직 키우는 고양이가 없습니다...<br>
+          도서관에 있는 고양이 책은 대부분 읽어 볼 만큼 관심이 있습니다<br>
+          독립만 하면 1순위로 집사가 되고픈 예비 집사입니다
+    </div>
+  </div>
+    <div class="card">
+      <div class="card-body" style ="position:absolute; bottom: -200px;">
+        <blockquote class="blockquote mb-0">
+          <p>成人材之未就 均風俗之不齊</p>
+          <footer class="blockquote-footer">SKKU <cite title="Source Title"></cite></footer>
+        </blockquote>
+      </div>
+    </div>
+  </body>
+</html>
