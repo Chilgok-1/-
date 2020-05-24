@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-size :cover;
+        background-image: url('https://i.ytimg.com/vi/_Zm5cUqE7hg/maxresdefault.jpg');
+    }
+    .content{
+        width : 50%;
+        height : 30%;
+        position : absolute;
+        left : 25%;
+        top : 35%;
+        text-align: center;
+        margin : 0px 0px 0px 0px;
+    }
+    .window{
+        height : 80%;
+        border : 5px solid black;
+        border-radius: 5%;
+        font-weight: bolder;
+        font-size : Larger;
+        text-shadow: white;
+    }
+    h1{
+        margin : 10px 10px 10px 0px;
+     }
+    h2{
+        margin : 15px 0px 0px 0px;
+    }
+    .stopwatch, .timer{
+        display : none;
+    }
+    input[type = 'number']{
+        width : 50px;
+    }
+
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><strong>Hi</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="a.html">고양이<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="b.html">넷플릭스</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="time.html">시계</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div class = 'content'>
+    <div class = 'window'>
+        <div class = 'clock'>
+            <h2>CLOCK</h2>
+            <h1>00:00:00</h1>
+        </div>
+        <div class = 'stopwatch'>
+            <h2>STOP WATCH</h2>
+            <h1>00:00</h1>
+            <button id = 'start_watch'>start</button>
+            <button id = 'reset_watch'>reset</button>
+        </div>
+        <div class = 'timer'>
+            <h2>TIMER</h2>
+            <h1>00:00</h1>
+            <input id = 'm_timer' type = 'number' max='60' min = '0' value = '0'>분
+            <input id = 's_timer' type = 'number'max ='60' min = '0' value = '0'>초
+            <button id = 'start'>start</button>
+            <button id = 'reset'>reset</button>
+        </div>
+    </div>
+    <div class = 'slect'>
+        <input id = 'sclock' type = 'radio' name = 'select' checked>
+        <input id = 'sstopwatch' type = 'radio' name = 'select'>
+        <input id = 'stimer' type = 'radio' name = 'select'>
+    </div>
+
+    </div>
+
+</body>
+<script src = 'display.js'></script>
+<script src = 'clock.js'></script>
+<script src = 'stopwatch.js'></script>
+<script src = 'timer.js'></script>
+</html>
